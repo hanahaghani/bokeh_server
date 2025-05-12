@@ -1,0 +1,28 @@
+# Flight Delay Analysis with Bokeh
+
+This project uses the [Bokeh](https://bokeh.org) library to analyze and visualize flight delay data interactively. It provides insights through histograms, summary tables, and route-specific delay visualizations.
+
+## 📁 Project Structure
+'''
+- flights.py: Main script to launch the Bokeh server app
+- hist.py: Generates histograms of flight delays per airline
+- route.py: Visualizes delays based on origin and destination
+- table.py: Displays a statistical summary in a table
+- flights.csv: Raw flight delay data
+- flights_map.csv: (Optional) Additional mapping data'''
+## 📦 Requirements
+
+Install dependencies using:
+'''
+pip install bokeh pandas numpy'''
+🚀 Running the App
+To launch the application, run:
+'''
+bokeh serve --show flights.py'''
+This will start a Bokeh server and open your browser with the interactive dashboard.
+
+📊 Features
+Histogram Panel: Visualize the distribution of arrival delays for selected airlines.
+Route Panel: Compare delays by route and airline.
+Summary Table: View descriptive statistics of arrival delays for each airline.
+
